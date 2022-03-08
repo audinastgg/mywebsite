@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audina Sitanggang</title>  
+    <link rel="stylesheet" href="style.css">      
+</head>
+<body>
+    <div id="landing-page">
+        <h1 class="title">Selamat datang di website saya</h1>
+    </div>
+    <div class="container">
+    <header>
+        <div class="respiratory">
+            <ul>
+                <li><a href=""><img src="images/netlify.svg" alt=""></a></li>
+                <li><a href=""><img src="images/github.svg" alt=""></a></li>
+                <li><a href=""><img src="images/gitlab.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div id="about-me">
+            <div class="section-introduction">
+                    <img src="images/profile.jpeg" alt="aboutme" class="profile">
+                <p>
+                    Perkenalkan saya Audina L. Sitanggang, 
+                    Saya senang dengan pengembangan website khususnya dalam membuat tampilan website yang modern dan responsive.
+                    Saya membuat tampilan website dengan menggunakan HTML dan juga CSS, dan saya juga mempelajari menggunakan JavaScript dan Framework modern.
+                </p>
+            </div>
+        </div>
+
+        <div id="project">
+            <div class="heading">
+                <h1>My Projects</h1>
+            </div>
+            <div class="images">
+                <span id="myImages">
+                <a href="https://audinastgg-3-column-preview-card-component-main.netlify.app/" target="_blank"><img src="images/1.jpg" alt=""><span> Three Column Preview Card</span></a>
+                <a href="https://four-card-featured-section.netlify.app/" target="_blank"><img src="images/2.jpg" alt=""><span>Four Card Featured Section</span></a>
+                <a href="https://audinastgg-nft-preview-card-component.netlify.app/" target="_blank"><img src="images/3.jpg" alt=""><span>NFT Preview Card</span></a></span>
+                <span id="dots"></span><span id="more">
+                <a href="https://audinastgg-ordersummarycomponent.netlify.app/" target="_blank"><img src="images/4.jpg" alt=""><span>Order Summary Component</span></a>
+                <a href="https://audinastgg-profile-card-component-main.netlify.app/"><img src="images/5.jpg" alt=""><span>Profile Card Component</span></a>
+                <a href="https://audinasitanggang-qr-code.netlify.app/" target="_blank"><img src="images/6.jpg" alt=""><span>QRCode Component</span></a>
+                <a href="https://audinastgg-single-price-gridcomponent.netlify.app/" target="_blank"><img src="images/7.jpg" alt=""><span>Single Price Grid Component</span></a>
+                <a href="https://audinastgg-social-proof-section.netlify.app/"><img src="images/8.jpg" alt=""><span>Social Proof Section</span></a>
+                <a href="https://audinastgg-stats-preview-card-component.netlify.app/"><img src="images/9.jpg" alt=""><span>Stats Preview Component</span></a>
+            </span>
+        </div>
+        <button onclick="myFunction()" id="myBtn">Show More</button>
+    </div>
+    </section>
+</div>
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreImage = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+      var myImages = document.getElementById("myImages");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreImage.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less";
+        moreImage.style.display = "grid";
+        moreImage.style.gridTemplateColumns = "1fr 1fr 1fr";
+      }
+    }
+    </script>
+    
+</body>
+</html>
