@@ -11,23 +11,34 @@
     <div id="landing-page">
         <h1 class="title">Selamat datang di website saya</h1>
     </div>
+    <button id="see-more"><a href="#about-me">Find more</a></button>
     <div class="container">
     <header>
         <div class="respiratory">
             <ul>
-                <li><a href=""><img src="images/netlify.svg" alt=""></a></li>
-                <li><a href=""><img src="images/github.svg" alt=""></a></li>
-                <li><a href=""><img src="images/gitlab.svg" alt=""></a></li>
+                <li><a href="https://app.netlify.com/teams/audinastg/overview" target="_blank"><img src="images/netlify.svg" alt=""></a></li>
+                <li><a href="https://github.com/audinastgg" target="_blank"><img src="images/github.svg" alt=""></a></li>
+                <li><a href="https://gitlab.com/stgg" target="_blank"><img src="images/gitlab.svg" alt=""></a></li>
             </ul>
         </div>
 
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#landing-page">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="cv.html">Curriculum Vitae</a></li>
+                <li><a href="#my-profile">Contact</a></li>
             </ul>
         </div>
+        <div class="dropdown">
+            <button onclick="dropFunction()" class="dropbtn">Menu</button>
+            <ul id="myDropdown" class="dropdown-content">
+              <li><a href="#landing-page">Home</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="cv.html">Curriculum Vitae</a></li>
+              <li><a href="#my-profile">Contact</a></li>
+            </ul>
+          </div>
     </header>
     <section class="main">
         <div id="about-me">
@@ -36,14 +47,14 @@
                 <p>
                     Perkenalkan saya Audina L. Sitanggang, 
                     Saya senang dengan pengembangan website khususnya dalam membuat tampilan website yang modern dan responsive.
-                    Saya membuat tampilan website dengan menggunakan HTML dan juga CSS, dan saya juga mempelajari menggunakan JavaScript dan Framework modern.
+                    Saya membuat tampilan website dengan menggunakan HTML dan juga CSS, dan juga  menggunakan JavaScript dan Framework modern.
                 </p>
             </div>
         </div>
 
         <div id="project">
             <div class="heading">
-                <h1>My Projects</h1>
+                <h1>Projects</h1>
             </div>
             <div class="images">
                 <span id="myImages">
@@ -61,8 +72,31 @@
         </div>
         <button onclick="myFunction()" id="myBtn">Show More</button>
     </div>
+
+    <div id="my-profile">
+        <div class="me">
+            <h1>Kontak Saya</h1>
+        </div>
+        <div class="contact-saya">
+            <div>
+                <a href="https://wa.me/+6282364361104" target="_blank" class="contact-icon-bundler">
+                    <img src="https://img.icons8.com/office/344/whatsapp--v1.png" alt="phone.png" class="contact-icon">
+                    <span class="contact-desktop">+62 823 6436 1104</span>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:someone@example.com" class="contact-icon-bundler">
+                    <img src="https://img.icons8.com/fluency/344/gmail-new.png" alt="mail.png" class="contact-icon">
+                    <span class="contact-desktop">audinasitanggang@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
     </section>
 </div>
+<footer>
+    <p>Created by Audina L. Sitanggang</p>
+</footer>
 <script>
     function myFunction() {
       var dots = document.getElementById("dots");
@@ -81,6 +115,23 @@
         moreImage.style.gridTemplateColumns = "1fr 1fr 1fr";
       }
     }
+
+    function dropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
     </script>
     
 </body>
