@@ -72,4 +72,9 @@ h6 {
     color: gray;
 }
 
-
+@media screen and (max-width: 600px) {
+   aside {
+       float: none;
+       display: inline-block;
+   }
+}
