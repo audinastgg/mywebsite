@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: rgba(186, 206, 224, 0.616);
+    background-color: rgb(174, 198, 212);
     font-family: 'Fredoka', sans-serif;
 }
 .container {
@@ -73,7 +73,10 @@ a:hover {
 }
 header img {
     width: 20px;
-    padding-left: 20px;
+}
+header img:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
 }
 .dropbtn {
     display: none;
@@ -102,14 +105,14 @@ header img {
     padding-top: 20px;
 }
 #project {
-    background-color: #f7f9fcd2;
+    background-color: #d3d7dfd2;
     margin: 0 auto;
+    width: 95%;
     margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
-    /* width: 90%; */
     padding-bottom: 50px;
-    /* border-radius: 10px; */
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .heading {
@@ -122,22 +125,23 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .images {
-    padding: 50px 50px;
+    /* padding: 50px 50px; */
     margin: 0 auto;
 
 }
 .images a > img {
     width: 50%;
     height: 50%;
-
     padding: 50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-top: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .images a > img:hover{
     cursor: context-menu;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 
 span{
     color: #000000;
@@ -197,7 +201,7 @@ footer {
     color: gray;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 700px) {
 body {
     margin: 0;
     padding: 0;
@@ -282,9 +286,10 @@ body {
   @media screen and (max-width: 500px) {
     body {
         margin: 0;
+        padding: 0;
     } 
     .container {
-          margin: 0 auto;
+          margin: 10 auto;
       }
       #see-more {
           margin-top: 50px;
@@ -307,4 +312,5 @@ body {
             display: grid;
             grid-template-columns: 1fr;
         }
+       
   }
