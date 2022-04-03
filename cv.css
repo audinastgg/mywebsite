@@ -32,6 +32,11 @@ aside{
 a {
     color: black;
 }
+#file {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 .info {
     display: grid;
     text-align: left;
